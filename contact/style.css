@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter-Regular";
+    font-weight: 300;
+}
+
+:root {
+    --light-blue: #E7FAFE;
+    --black: #1a1a1a;
+    --orange: #FF7967;
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(asset/font/Inter_18pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(asset/font/Inter_18pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url(asset/font/Inter_18pt-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Inter-Medium";
+    src: url(asset/font/Inter_24pt-Medium.ttf);
+}
+
+.container {
+    width:100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    cursor: pointer;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.Contact {
+    width:90%;
+    margin:0 auto;
+    margin-top: 5rem;
+}
+
+.contctus {
+    font-family: "Inter-SemiBold";
+    font-size: 64px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 5%;
+}
+
+.div-one {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.chef {
+    flex: 0 0 36%;
+    height: 472px;
+    width: 400px;
+}
+
+.inputs {
+    flex: 0 0 55%;
+}
+
+.inputs input {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.inputs textarea {
+    border: 1px solid rgb(230, 226, 226);
+    border-radius: 0.5rem;
+}
+
+span {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10%;
+}
+
+.lbl {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.msg {
+    display: flex;
+    flex-flow: column;
+}
+
+.inbox {
+    background-image: url(asset/image/Subscribe\ Card.png);
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 442px;
+    text-align: center;
+    justify-content: center;
+    padding: 3%;
+    margin: 8% auto;
+    margin-top: 12%;
+}
+
+.title {
+    font-family: "Inter-SemiBold";
+    font-size: 48px;
+    margin: 15px;
+    padding-right: 80px;
+    padding-bottom: 2%;
+    text-align: center;
+    margin-left: 7%;
+}
+
+.mtn {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    color: #656464;
+}
+
+label {
+    font-family: "Inter-Medium";
+    font-size: 12px;
+    font-weight: 700;
+    color: #a09f9f;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.subm {
+    padding: 10px;
+    background-color: rgb(34, 33, 33);
+    border-radius: 10px;
+    width: 180px;
+    height: 64px;
+    margin-top: 3%;
+    margin-right: 50%;
+    color: white;
+}
+
+input {
+    border: 1px solid rgb(230, 226, 226);
+    border-radius: 6px;
+    padding: 5%;
+    height: 76%;
+    width: 105%;
+}
+
+.subs {
+    padding: 10px;
+    background-color: rgb(34, 33, 33);
+    border-radius: 10px;
+    color: white;
+    margin-left: 329px;
+
+}
+
+.email {
+    height: 100%;
+    border-color: white;
+    border-radius: 30px;
+}
+
+#sub {
+    background-color: rgb(34, 33, 33);
+    border-radius: 10px;
+    flex: 0 0 30%;
+    color: white;
+    text-align: center;
+    height: 100%;
+    width: 160px;
+    height: 60px;
+    border-radius: 17px;
+    margin-right: 3%;
+}
+
+.inpbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-color: white;
+    width: 480px;
+    margin: 3rem auto;
+    height: 80px;
+    border-radius: 30px;
+}
+
+.btn-last input {
+    height: 100%;
+    border: 0;
+}
+
+.recipes {
+    width: 100%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.food {
+    flex: 0 0 20%;
+    height: 320px;
+    position: relative;
+}
+
+.fooder {
+    display: flex;
+    justify-content: center;
+    /* padding: 6%; */
+    position: absolute;
+    bottom: 1rem;
+    font-size: 0.8rem;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.minutes {
+    font-family: "Inter-Regular";
+    font-size: 13px;
+    color: #656464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.health {
+    font-family: "Inter-Regular";
+    font-size: 13px;
+    color: #656464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.moso {
+    font-family: "Inter-Semibold";
+    font-size: 18px;
+    color: #1b1b1b;
+    padding-left: 4%;
+    padding-top: 2%;
+}
+
+.last-logo {
+    padding-top: 4%;
+}
+
+.last-text {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    color: #656464;
+    margin-left: -40px;
+}
+
+.last-logom {
+    display: flex;
+    text-align: right;
+    margin-top: -37px;
+    gap: 40px;
+    margin-left: 99%;
+
+}
+
+
+
+.titr {
+    font-family: "Inter-SemiBold";
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 125px;
+}
+
+.end-logo {
+    margin-top: 160px;
+    margin-left: 79px;
+}
+
+.end-logo {
+    margin-top: 160px;
+    margin-left: 79px;
+}
+
+.end {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.last-paragraph {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 13px;
+}
+
+.end-pg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 3rem 0;
+    padding: 0 1.5rem;
+}
+
+.last-paragraph {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 13px;
+}
+
+
+.last-text-end {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.orange-color {
+    color: var(--orange);
+}
+
+.last-nav {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+    direction: rtl;
+    font-family: "Inter-Medium";
+    margin-left: 500px;
+    margin-top: 200px;
+    font-size: 15px;
+    padding-right: 3rem;
+}
+
+.last-logo-3 {
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.last-text {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    color: #656464;
+    margin-left: 50px;
+}
+
+#orange-color {
+    color: #FF7967;
+    display: inline;
+}
