@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter-Regular";
+    font-weight: 300;
+}
+
+:root {
+    --light-blue: #E7FAFE;
+    --black: #1a1a1a;
+    --orange: #FF7967;
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(asset/font/Inter_18pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(asset/font/Inter_18pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url(asset/font/Inter_18pt-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Inter-Medium";
+    src: url(asset/font/Inter_24pt-Medium.ttf);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.page-logoi {
+    width: 110px;
+    height: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.nav-home{
+    cursor: pointer;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.headline {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.headline-recipes {
+    margin-top: 4rem;
+}
+
+.chef {
+    font-family: "Inter-SemiBold";
+    font-size: 64px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.proffile {
+    padding: 2%;
+
+    justify-content: center;
+    display: flex;
+}
+
+.logo-chef {
+    width: 40px;
+    height: 40px;
+
+}
+
+.name-logo {
+    font-family: "Inter-Bold";
+    font-size: 16px;
+    margin: 15px;
+    padding-right: 80px;
+}
+
+.date-chef {
+    font-family: "Inter-Medium";
+    font-size: 16px;
+    color: #656464;
+    margin: 15px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid rgb(197, 196, 196);
+}
+
+.img-chef {
+    border-radius: 1rem;
+}
+
+.par-chef {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    color: #656464;
+    text-align: center;
+    padding: 3%;
+
+}
+
+.img-chef {
+    width: 1280px;
+    height: 600px;
+}
+
+.question {
+    padding-top: 2%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+}   
+
+.share {
+    direction: rtl;
+}
+
+.titr-share {
+    display: grid;
+    font-family: "Inter-Semibold";
+    font-size: 14px;
+    color: #1b1b1b;
+    margin-right: 27%;
+}
+
+.share-logo {
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 2%;
+    margin-right: 31%;
+}
+
+.lg {
+    width: 20px;
+    height: 20px;
+    margin: 2%;
+}
+
+.top-q {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 6%;
+}
+
+.titr-ques {
+    font-family: "Inter-Semibold";
+    font-size: 24px;
+    margin: 15px;
+    padding-right: 80px;
+    padding-bottom: 2%;
+}
+
+p {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    color: #656464;
+    padding-bottom: 2%;
+}
+.lorem-ip{
+    margin-bottom: 3%;
+}
+.par-ques{
+    width: 67%;
+}
+.par-ques-1{
+    width: 133%;
+}
+.Lorem-ipsum{
+    font-family: "Inter-Medium";
+    font-size: 36px;
+    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(240, 8%, 93%));
+    margin-top: 4%;
+    direction: ltr;
+    width: 70%;
+}
+.ques{
+    margin-left: 11%;
+}
+
+.-ipsum {
+    padding: 3%;
+    margin: 3%;
+    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(240, 2%, 82%));
+    font-size: 36px;
+    margin-top: 3%;
+}
+
+.titr-ques {
+    margin-left: -2px;
+}
+
+.inbox {
+    text-align: center;
+    padding: 3%;
+    height: 300px;
+    text-align: center;
+    padding: 3%;
+    background-size: 100%;
+    background-position: center;
+    margin-top: 8%;
+}
+
+.last-div {
+    background-image: url(asset/image/Subscribe\ Card.png);
+    background-repeat: no-repeat;
+    margin-left: 140px;
+    height: 450px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-size: 100%;
+    background-position: center;
+    width: 90%;
+}
+
+.btn-last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 480px;
+    margin: 3rem auto;
+    height: 80px;
+    margin-top: -1%;
+    border-radius: 30px;
+}
+
+.btn-last input {
+    height: 100%;
+    border: 0;
+}
+
+.email {
+    width: 50%;
+    height: 55px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+
+.subm {
+    padding: 10px;
+    background-color: rgb(34, 33, 33);
+    border-radius: 10px;
+    width: 22%;
+    margin-top: 3%;
+    margin-right: 50%;
+    color: white;
+}
+
+
+.btn-last input {
+    border: 0;
+    border-radius: 6px;
+    margin-top: 1rem;
+    flex: 0 0 67%;
+}
+
+.sub {
+    background-color: rgb(34, 33, 33);
+    border-radius: 10px;
+    flex: 0 0 30%;
+    color: white;
+    text-align: center;
+    height: 60px;
+    width: 160px;
+}
+.email {
+    border: 1px solid white;
+    flex: 0 0 60%;
+    height: 100%;
+    border-radius: 15px;
+}
+.btn-last input,
+.sub {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    display: grid;
+    font-family: "Inter-Semibold";
+    font-size: 46px;
+    color: #1b1b1b;
+    text-align: center;
+}
+
+.recipes {
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.food {
+    flex: 0 0 20%;
+    height: 260px;
+    position: relative;
+}
+
+.fooder {
+    display: flex;
+    justify-content: center;
+    padding: 6%;
+    position: absolute;
+    bottom: -32px;
+    font-size: 0.8rem;
+    align-items: center;
+    gap: 1rem;
+    margin-left: -7%;
+    margin-bottom: -4%;
+}
+
+.minutes {
+    font-family: "Inter-Regular";
+    font-size: 13px;
+    color: #656464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.health {
+    font-family: "Inter-Regular";
+    font-size: 13px;
+    color: #656464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moso {
+    font-family: "Inter-Semibold";
+    font-size: 16px;
+    color: #1b1b1b;
+}
+
+.last-logo-3 {
+    direction: rtl;
+
+}
+
+.last-text {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    color: #656464;
+    margin-top: 20px;
+}
+
+.last-nav {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+    direction: rtl;
+    font-family: "Inter-Medium";
+}
+
+.email {
+    border-radius: 15px;
+}
+.last-paragraph {
+    text-align: center;
+    font-size: 13px;
+}
+
+.end-pg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.last-text-end {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-link{
+    text-align: center;
+}
+.nav-lin{
+    cursor: pointer;
+}
+
+.orange-color {
+    color: var(--orange);
+}
+
+.last-nav {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+    direction: rtl;
+    font-family: "Inter-Medium";
+    font-size: 15px;
+    margin-right: 3%;
+}
+
+.last-logo-3 {
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.last-text {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    color: #656464;
+}
+
+.end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 2rem;
+    border-bottom: 1px solid #dbdbdb;
+    margin-top: 11%;
+}
+.end-titr{
+    margin-top: 9%;
+}
