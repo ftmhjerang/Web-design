@@ -1,0 +1,696 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter-Regular";
+    font-weight: 300;
+}
+
+:root {
+    --light-blue: #E7FAFE;
+    --black: #1a1a1a;
+    --orange: #FF7967;
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(asset/font/Inter_18pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(asset/font/Inter_18pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url(asset/font/Inter_18pt-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Inter-Medium";
+    src: url(asset/font/Inter_24pt-Medium.ttf);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-links div {
+    cursor: pointer;
+}
+
+.header-logo {
+    text-align: right;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.page-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.headline {
+    font-family: "Inter-SemiBold";
+    font-size: 64px;
+    text-align: left;
+    margin-bottom: 7%;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.proffile {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: red; */
+    border-left: 1px solid #dbdbdb;
+    ;
+    padding-left: 1rem;
+    gap: 0.8rem;
+}
+
+.proffile:first-child {
+    border-left: 0;
+    padding-left: 0;
+    gap: 0;
+}
+
+.proffile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.page-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.item-page-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.item-page-right-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #E7FAFE;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-chef {
+    width: 50px;
+    height: 50px;
+
+}
+
+.timer {
+    width: 20px;
+    height: 20px;
+}
+
+.name-logo {
+    font-family: "Inter-Medium";
+    font-size: 12px;
+}
+
+.date-chef {
+    font-family: "Inter-Medium";
+    font-size: 12px;
+    color: #656464;
+}
+
+.text-info {
+    display: flex;
+    width: 10%;
+    padding-top: -2%;
+}
+
+.logo-info {
+    width: 6%;
+    height: 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    justify-content: space-between;
+}
+
+.nutrition {
+    display: flex;
+    padding: 3%;
+    width: 90%;
+    margin: 3rem auto;
+    gap: 2rem;
+}
+
+.nut-img {
+    width: 65%;
+    height: 500px;
+}
+
+.nut-info {
+    background-color: var(--light-blue);
+    padding: 2%;
+    border-radius: 30px;
+    flex: 0 0 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: "Inter-SemiBold";
+    font-size: 32px;
+    padding: 1%;
+    padding-bottom: 6%;
+}
+
+.infosec {
+    display: flex;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    border-bottom: #aba7a7 1px solid;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cal {
+    font-family: "Inter-Medium";
+    font-size: 18px;
+    color: #747272;
+}
+
+.foot-inf {
+    margin-top: 20%;
+    font-family: "Inter-Medium";
+    font-size: 15px;
+    color: #747272;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.vasat {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    color: #747272;
+    width: 84%;
+    margin: 3rem auto;
+    line-height: 1.5rem;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ingredient {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 60%;
+    margin-top: -5%;
+}
+
+.Recipe {
+    flex: 0 0 40%;
+}
+
+.ingredient img {
+    width: 15px;
+    height: 15px;
+}
+
+.query-type-img {
+    border-bottom: 1px solid #dbdbdb;
+    padding: 1.5rem 0;
+}
+
+.title-ing {
+    font-family: "Inter-SemiBold";
+    font-size: 36px;
+}
+
+.main-mtn {
+    font-family: "Inter-SemiBold";
+    font-size: 24px;
+    margin-top: 5%;
+}
+
+.query-type {
+    padding: 1.5rem 0;
+}
+
+.img-smith {
+    width: 80%;
+    height: 80%;
+}
+
+
+span {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    color: #9e9b9b;
+}
+
+.spn {
+    display: grid;
+}
+
+
+
+.query-type {
+    border-bottom: 1px solid #dbdbdb;
+
+}
+
+.Recipe {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    margin: 5%;
+    width: 50%;
+
+}
+
+.recipe-title {
+    font-family: "Inter-SemiBold";
+    font-size: 36px;
+    padding: 2%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.menu-rec {
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.menu-img {
+    width: 38%;
+    height: 10%;
+}
+
+.rec-mtn {
+    display: grid;
+    width: 48%;
+    padding: 21px;
+}
+
+.first-m {
+    font-family: "Inter-SemiBold";
+    font-size: 18px;
+}
+
+.sauce {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 auto
+}
+
+.rast {
+    display: flex;
+    flex-direction: column;
+    flex: 2rem;
+}
+
+.chap-img {
+    height: 434px;
+    position: relative;
+    width: 400px;
+    margin-right: 4%;
+    margin-top: -6%;
+}
+
+
+.sos {
+    font-family: "Inter-SemiBold";
+    font-size: 36px;
+}
+
+.direction {
+    width: 75%;
+    margin-left: 5rem;
+}
+
+.drctn {
+    font-family: "Inter-SemiBold";
+    font-size: 36px;
+    margin-bottom: -5%
+}
+
+.option2 {
+    font-family: "Inter-Bold";
+    font-size: 16px;
+}
+
+.rast .query-type {
+    padding: 1rem 0;
+}
+
+.dir-par{
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    color: #656464;
+    padding-bottom: 2%;
+    margin-top: 5%;
+    width: 68%;
+    margin-left: 4%;
+}
+
+.dir-img {
+    width: 790px;
+    height: 400px;
+    margin-left: 4%;
+}
+
+.inbox {
+    background-image: url(asset/image/photo_2025-04-26_07-09-23.jpg);
+    height: 442px;
+    text-align: center;
+    justify-content: center;
+    padding: 3%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.direction .query-type {
+    border: 0;
+    margin: 1rem 0;
+}
+
+.btn-last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 3rem auto;
+    height: 80px;
+    width: 480px;
+    border-radius: 25px;
+    padding: 0.3rem;
+}
+
+.btn-last input {
+    height: 100%;
+    border: 0;
+}
+
+.btn-last button {}
+
+.option2-lable {
+    padding: 0 0.5rem;
+    font-family: "Inter-SemiBold";
+    font-size: 24px;
+}
+
+.title {
+    font-family: "Inter-Bold";
+    font-size: 48px;
+    margin: 15px;
+    padding-right: 80px;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.mtn {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    color: #656464;
+}
+
+label {
+    font-family: "Inter-Regular";
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.subm {
+    padding: 10px;
+    background-color: rgb(34, 33, 33);
+    border-radius: 10px;
+    width: 22%;
+    margin-top: 3%;
+    margin-right: 50%;
+    color: white;
+}
+
+
+.btn-last input {
+    border: 0;
+    border-radius: 6px;
+    margin-top: 1rem;
+    flex: 0 0 70%;
+}
+
+.btn-last input,
+.sub {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn-last input {
+    border-radius: 6px;
+    flex: 0 0 70%;
+    padding: 0 0.5rem;
+}
+
+.sub {
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    flex: 0 0 30%;
+    color: white;
+    text-align: center;
+    width: 160px;
+    height: 60px;
+    margin-right: 1%;
+}
+
+.recipes {
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.food {
+    flex: 0 0 20%;
+    height: 260px;
+    position: relative;
+}
+
+.fooder {
+    display: flex;
+    justify-content: center;
+    padding: 6%;
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: -14%;
+    margin-left: -3%
+}
+
+.minutes {
+    font-family: "Inter-Medium";
+    font-size: 14px;
+    color: #656464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.health {
+    font-family: "Inter-Regular";
+    font-size: 13px;
+    color: #656464;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.moso {
+    font-family: "Inter-Semibold";
+    font-size: 13px;
+    color: #1b1b1b;
+    padding-left: 4%;
+    padding-top: 2%;
+}
+
+.last-logo {
+    padding-top: 4%;
+}
+
+.last-text {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    color: #656464;
+    margin-left: -40px;
+}
+
+.last-logom {
+    display: flex;
+    text-align: right;
+    margin-top: -30px;
+    gap: 40px;
+    margin-left: 70%;
+}
+
+
+.pic {
+    height: 200px;
+    width: 290px;
+}
+
+.end-logo {
+    margin-top: 160px;
+    margin-left: 79px;
+}
+
+.end {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 0px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+
+}
+
+.last-paragraph {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 13px;
+}
+
+.end-pg {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin: 3rem 0;
+}
+
+.last-text-end {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.orange-color {
+    color: var(--orange);
+}
+
+.last-nav {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+    direction: rtl;
+    font-family: "Inter-Medium";
+    margin-left: 500px;
+    margin-top: 197px;
+    font-size: 15px;
+    padding-right: 3rem;
+}
+
+.last-logo-3 {
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.last-text {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    color: #656464;
+    margin-left: 50px;
+}
+.calnumb{
+    font-family: "Inter-Medium";
+    font-size: 18px;
+}
+.footer-m{
+    font-family: "Inter-Medium";
+    font-size: 14px;
+    color: #00000070;
+}
+.lorem-1{
+    font-family: "Inter-Regular";
+    font-size: 16px;
+}
